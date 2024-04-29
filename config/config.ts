@@ -7,4 +7,4 @@ export const adminUser: admin = {
     username: "admin",
     password: "admin"
 };
-export const filePath = "path/data/userData.json";
+export const filePath = "C:/Users/gs-3865/Desktop/AvayaGCEweve1/User_Application/server/src/data/userData.json";

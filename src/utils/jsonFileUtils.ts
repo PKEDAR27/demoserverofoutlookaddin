@@ -2,6 +2,7 @@ import * as fs from "fs";
 import axios from "axios";
 import { user } from "../types/user";
 import { filePath } from "../../config/config";
+import path from "path";
 
 export const fetchUserData = async() => {
     try {
@@ -29,5 +30,5 @@ export const getUserData = async() => {
 };
 
 export const saveUserData = (userData: user[]) => {
-    fs.writeFileSync(filePath, JSON.stringify(userData, null, 2));
+    fs.writeFileSync(path.join(__dirname, "data"), JSON.stringify(userData, null, 2));
 };
