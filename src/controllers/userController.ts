@@ -17,7 +17,7 @@ export const createUser = async (request: Request, response: Response) => {
     const newUser: user = request.body;
     const usersList: user[] = await getUserData();
     console.log("Data", newUser)
-    saveUserData({...usersList, ...newUser});
+    // saveUserData({...usersList, ...newUser});
     response.json({
       message: "Metting Data",
       data: newUser,
